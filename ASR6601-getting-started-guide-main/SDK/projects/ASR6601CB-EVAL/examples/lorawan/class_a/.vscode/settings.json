@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.config": "erlang",
+        "tremo_pwr.h": "c",
+        "tremo_gpio.h": "c",
+        "tremo_uart.h": "c",
+        "tremo_regs.h": "c",
+        "loramac.h": "c",
+        "stdio.h": "c",
+        "utilities.h": "c",
+        "commissioning.h": "c"
+    },
+    "commentTranslate.source": "Baidu"
+}

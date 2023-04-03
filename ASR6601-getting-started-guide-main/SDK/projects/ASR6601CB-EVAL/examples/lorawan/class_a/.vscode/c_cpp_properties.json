@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "..\\..\\..\\..\\..\\projects\\ASR6601CB-EVAL\\examples\\lorawan\\class_a\\inc",
+                "..\\..\\..\\..\\..\\platform\\CMSIS",
+                "..\\..\\..\\..\\..\\platform\\system",
+                "..\\..\\..\\..\\..\\drivers\\crypto\\inc",
+                "..\\..\\..\\..\\..\\drivers\\peripheral\\inc",
+                "..\\..\\..\\..\\..\\lora\\driver",
+                "..\\..\\..\\..\\..\\lora\\system",
+                "..\\..\\..\\..\\..\\lora\\system\\crypto",
+                "..\\..\\..\\..\\..\\lora\\radio",
+                "..\\..\\..\\..\\..\\lora\\radio\\sx126x",
+                "..\\..\\..\\..\\..\\lora\\mac",
+                "..\\..\\..\\..\\..\\lora\\mac\\region"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "D:/Program Files/Visual Studio 2019/VC/Tools/MSVC/14.28.29910/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "browse": {
+                "path": [],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": ""
+            },
+            "mergeConfigurations": false
+        }
+    ],
+    "version": 4
+}

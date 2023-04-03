@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.config": "erlang",
+        "linkwan.h": "c"
+    },
+    "commentTranslate.source": "Baidu"
+}

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.config": "erlang",
+        "tremo_gpio.h": "c",
+        "tremo_adc.h": "c"
+    },
+    "commentTranslate.source": "Baidu"
+}

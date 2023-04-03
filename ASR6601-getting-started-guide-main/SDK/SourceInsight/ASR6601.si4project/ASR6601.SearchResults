@@ -1,0 +1,31 @@
+---- UpLinkCounter Matches (38 in 2 files) ----
+LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) line 167 : static uint32_t UpLinkCounter = 0;
+LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) line 177 :  * UpLinkCounter value
+LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) line 179 : static bool IsUpLinkCounterFixed = false;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                         UpLinkCounter = 0;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                         LOG_PRINTF(LL_VDEBUG, "Join done, UpLinkCounter:%u\r\n", (unsigned int)UpLinkCounter);
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                         if ( IsUpLinkCounterFixed == false ) {
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                             UpLinkCounter++;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                             LOG_PRINTF(LL_VDEBUG, "Unconfirmed data, UpLinkCounter:%u\r\n", (unsigned int)UpLinkCounter);
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                 if ( IsUpLinkCounterFixed == false ) {
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                     UpLinkCounter++;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                     LOG_PRINTF(LL_VDEBUG, "Confirmed data received ACK, UpLinkCounter:%u\r\n", (unsigned int)UpLinkCounter);
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                     if ( IsUpLinkCounterFixed == false ) {
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                         UpLinkCounter++;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                         LOG_PRINTF(LL_VDEBUG, "Confirmed data can't send after decrease DR, UpLinkCounter:%u\r\n", (unsigned int)UpLinkCounter);
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                 if ( IsUpLinkCounterFixed == false ) {
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                     UpLinkCounter++;
+OnMacStateCheckTimerEvent in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                     LOG_PRINTF(LL_VDEBUG, "Confirmed data exceed retry times, UpLinkCounter:%u\r\n", (unsigned int)UpLinkCounter);
+Send in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     McpsConfirm.UpLinkCounter = UpLinkCounter;
+ResetMacParameters in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     UpLinkCounter = 0;
+PrepareFrame in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :             LoRaMacBuffer[pktHeaderLen++] = UpLinkCounter & 0xFF;
+PrepareFrame in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :             LoRaMacBuffer[pktHeaderLen++] = ( UpLinkCounter >> 8 ) & 0xFF;
+PrepareFrame in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                                            UpLinkCounter, &LoRaMacBuffer[pktHeaderLen] );
+PrepareFrame in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :                                            UpLinkCounter, &LoRaMacBuffer[pktHeaderLen] );
+PrepareFrame in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :             LoRaMacComputeMic( LoRaMacBuffer, LoRaMacBufferPktLen, LoRaMacNwkSKey, LoRaMacDevAddr, UP_LINK, UpLinkCounter, &mic );
+LoRaMacMibGetRequestConfirm in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :             mibGet->Param.UpLinkCounter = UpLinkCounter;
+LoRaMacMibSetRequestConfirm in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :             UpLinkCounter = mibSet->Param.UpLinkCounter;
+LoRaMacTestSetMic in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     UpLinkCounter = txPacketCounter;
+LoRaMacTestSetMic in LoRaMac.c (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     IsUpLinkCounterFixed = true;
+sMcpsConfirm in LoRaMac.h (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     uint32_t UpLinkCounter;
+uMibParam in LoRaMac.h (C:\Users\5099\Desktop\ASR6601-getting-started-guide-main\SDK\lora\mac) :     uint32_t UpLinkCounter;
